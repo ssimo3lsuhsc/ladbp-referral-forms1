@@ -67,7 +67,7 @@ necesario incluir texto en la solicitud final)"></label></div>
     </section>
     <div class="page-break"></div>
     <section>
-        <div class="clearfix">
+        <div class="clearfix hdc-header">
             <img class="float-left" src="images/HDC_logo.jpg" alt="LSUHSC Human Development Center: Building Capacity, Inspiring Change" />
             <address class="float-right text-right">
                 <dfn class="ladbp" data-text-en="Louisiana DeafBlind Project for Children and Youth" data-text-es="Proyecto para niños y adolescentes sordociegos de Luisiana"></dfn><br/>
@@ -90,78 +90,166 @@ necesario incluir texto en la solicitud final)"></label></div>
         <div class="row">
             <div class="column small-4">
                 <label data-text-en="Last Name" data-text-es="Apellido(s)">
-                    <input id="last_name" name="last_name"/>
+                    <input id="last_name" name="last_name" type="text"/>
                 </label>
             </div>
             <div class="column small-4">
                 <label data-text-en="First Name" data-text-es="Nombre">
-                    <input id="first_name" name="first_name"/>
+                    <input id="first_name" name="first_name" type="text"/>
                 </label>
             </div>
             <div class="column small-4">
                 <label data-text-en="Middle Name" data-text-es="Segundo Nombre">
-                    <input id="middle_name" name="middle_name"/>
+                    <input id="middle_name" name="middle_name" type="text"/>
                 </label>
             </div>
         </div>
         <div class="row column">
             <label data-text-en="School" data-text-es="Escuela">
-                <input id="school" name="school" />
+                <input id="school" name="school" type="text"/>
             </label>
         </div>
         <div class="row column">
             <label data-text-en="Address Line 1" data-text-es="Dirección postal, primera parte">
-                <input id="address1" name="address1" />
+                <input id="address1" name="address1" type="text"/>
             </label>
         </div>
         <div class="row column">
             <label data-text-en="Address Line 2" data-text-es="Dirección postal, segunda parte">
-                <input id="address2" name="address2" />
+                <input id="address2" name="address2" type="text"/>
             </label>
         </div>
         <div class="row">
             <div class="column small-3">
                 <label data-text-en="City" data-text-es="Ciudad">
-                    <input id="city" name="city" />
+                    <input id="city" name="city" type="text"/>
                 </label>
             </div>
             <div class="column small-3">
                 <label data-text-en="Parish" data-text-es="Parroquía">
-                    <input id="parish" name="parish" />
+                    <input id="parish" name="parish" type="text"/>
                 </label>
             </div>
             <div class="column small-3">
                 <label data-text-en="State" data-text-es="Estado">
-                    <input id="state" name="state" pattern="[A-Z]{2}" value="LA" />
+                    <input id="state" name="state" pattern="[A-Z]{2}" value="LA" type="text" maxlength="2"/>
                 </label>
             </div>
             <div class="column small-3">
                 <label data-text-en="ZIP" data-text-es="Código postal">
-                    <input id="zip" name="zip" pattern="[0-9]{5}(\-[0-9]{4})?" />
+                    <input id="zip" name="zip" pattern="[0-9]{5}(\-[0-9]{4})?" type="text"/>
                 </label>
             </div>
+            </div>
             <div class="row">
-                <div class="column small-6">
-                    <fieldset class="row">
-                        <legend class="column-legend small-4" data-text-en="Phone (circle one)"
-                                data-text-es="Teléfono (circule uno)"></legend>
-                        <div class="column small-8">
-                            <input type="radio" name="phone_type" value="Voice" id="phone_type_voice"/>
-                            <label for="phone_type_voice" data-text-en="Voice" data-text-es="Voz"></label>
-                            <input type="radio" name="phone_type" value="TTY" id="phone_type_tty"/>
-                            <label for="phone_type_tty">TTY</label>
-                            <input type="radio" name="phone_type" value="VP" id="phone_type_vp"/>
-                            <label for="phone_type_vp">VP</label>
-                        </div>
-                    </fieldset>
-                </div>
+                <fieldset class="column small-6">
+
+                        <legend data-text-en="Phone (circle one)"
+                                data-text-es="Teléfono (circule uno)" id="phone_legend"></legend>
+                        <input type="radio" name="phone_type" value="Voice" id="phone_type_voice"/>
+                        <label for="phone_type_voice" data-text-en="Voice" data-text-es="Voz"></label>
+                        <input type="radio" name="phone_type" value="TTY" id="phone_type_tty"/>
+                        <label for="phone_type_tty">TTY</label>
+                        <input type="radio" name="phone_type" value="VP" id="phone_type_vp"/>
+                        <label for="phone_type_vp">VP</label>
+                </fieldset>
                 <div class="column small-6">
                     <label data-text-en="Phone Number" data-text-es="Número de teléfono">
                         <input type="tel" name="phone" pattern="([2-9][0-9]{2}\-|\([2-9][0-9]{2}\) ?)[2-9][0-9]{2}\-[0-9]{4}" id="phone" />
                     </label>
                 </div>
             </div>
+        <div class="row">
+            <div class="column small-6">
+                <label data-text-en="Birth Date" data-text-es="Fecha de nacimiento">
+                    <input type="date" name="birth_date" id="birth_date" />
+                </label>
+            </div>
+            <div class="column small-6">
+                <fieldset>
+                    <legend data-text-en="Gender" data-text-es="Sexo"></legend>
+                    <input type="radio" name="gender" value="Male" id="gender_male"/>
+                    <label for="gender_male" data-text-en="Male" data-text-es="Varón"></label>
+                    <input type="radio" name="gender" value="Female" id="gender_female"/>
+                    <label for="gender_female" data-text-en="Female" data-text-es="Hembra"></label>
+                </fieldset>
+            </div>
         </div>
+        <article class="row column">
+            <h3 class="h5 row column" data-text-en="Details of the Person Filling Out This Form" data-text-es="Datos de la persona firmando este formulario"></h3>
+            <div class="row">
+                <div class="column small-4">
+                    <label data-text-en="Last Name" data-text-es="Apellido(s)">
+                        <input id="filler_last_name" name="filler_last_name" type="text"/>
+                    </label>
+                </div>
+                <div class="column small-4">
+                    <label data-text-en="First Name" data-text-es="Nombre">
+                        <input id="filler_first_name" name="filler_first_name" type="text"/>
+                    </label>
+                </div>
+                <div class="column small-4">
+                    <label data-text-en="Middle Name" data-text-es="Segundo Nombre">
+                        <input id="filler_middle_name" name="filler_middle_name" type="text"/>
+                    </label>
+                </div>
+            </div>
+            <div class="row column">
+                <label data-text-en="Address Line 1" data-text-es="Dirección postal, primera parte">
+                    <input id="filler_address1" name="filler_address1" type="text"/>
+                </label>
+            </div>
+            <div class="row column">
+                <label data-text-en="Address Line 2" data-text-es="Dirección postal, segunda parte">
+                    <input id="filler_address2" name="filler_address2" type="text"/>
+                </label>
+            </div>
+            <div class="row">
+                <div class="column small-6">
+                    <label data-text-en="City" data-text-es="Ciudad">
+                        <input id="filler_city" name="filler_city" type="text"/>
+                    </label>
+                </div>
+                <div class="column small-3">
+                    <label data-text-en="State" data-text-es="Estado">
+                        <input id="filler_state" name="filler_state" pattern="[A-Z]{2}" value="LA" type="text" maxlength="2"/>
+                    </label>
+                </div>
+                <div class="column small-3">
+                    <label data-text-en="ZIP" data-text-es="Código postal">
+                        <input id="filler_zip" name="filler_zip" pattern="[0-9]{5}(\-[0-9]{4})?" type="text"/>
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <fieldset class="column small-6">
+
+                    <legend data-text-en="Phone (circle one)"
+                            data-text-es="Teléfono (circule uno)" id="filler_phone_legend"></legend>
+                    <input type="radio" name="filler_phone_type" value="Voice" id="filler_phone_type_voice"/>
+                    <label for="filler_phone_type_voice" data-text-en="Voice" data-text-es="Voz"></label>
+                    <input type="radio" name="filler_phone_type" value="TTY" id="filler_phone_type_tty"/>
+                    <label for="filler_phone_type_tty">TTY</label>
+                    <input type="radio" name="filler_phone_type" value="VP" id="filler_phone_type_vp"/>
+                    <label for="filler_phone_type_vp">VP</label>
+                </fieldset>
+                <div class="column small-6">
+                    <label data-text-en="Phone Number" data-text-es="Número de teléfono">
+                        <input type="tel" name="phone" pattern="([2-9][0-9]{2}\-|\([2-9][0-9]{2}\) ?)[2-9][0-9]{2}\-[0-9]{4}" id="filler_phone" />
+                    </label>
+                </div>
+            </div>
+        </article>
+        <div class="page-break">
+        </div>
+        <article id="consent">
+            <h3 data-text-en="Consent to Register for the Louisiana DeafBlind Project" data-text-es="Consentimiento para registrarse en el Proyecto para sordociegos de Luisiana"></h3>
+            <p data-text-en="I do consent to register my child " data-text-es="Doy mi consentimiento para registrar a mi hijo/a  "><label for="consent_name" data-text-en="Name of Child" data-text-es="Nombre y apellidos del hijo/de la hija"></label><input type="text" id="consent_name" name="consent_name"
+            data-tail-en=" in the Louisiana DeafBlind Project for Children and Youth. I understand that the work of the Louisiana DeafBlind Project may include, but is not limited to, the following:"
+            data-tail-es=" en el Proyecto para niños y adolescentes sordociegos de Luisiana. Entiendo que el labor del Proyecto para sordociegos de Luisiana podrá incluir los siguientes, pero no se limita a ellos:"/></p>
+
+        </article>
+
 
 
     </section>

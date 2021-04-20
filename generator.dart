@@ -33,6 +33,7 @@ void main() {
     htmlDoc.head.querySelector("link[rel=stylesheet]").replaceWith(Element.html('<style type="text/css">' + sass.compile('scss/app.scss') + '</style>'));
     var attributeRemover = AttributeRemover(language);
     attributeRemover.visit(htmlDoc.body);
+    htmlDoc.querySelector('#consent').children.insert(0, htmlDoc.querySelector('.hdc-header').clone(true));
     File('application_' + language + '.html').writeAsStringSync(htmlDoc.outerHtml);
   }
 
