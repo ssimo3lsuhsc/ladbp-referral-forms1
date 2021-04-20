@@ -1,6 +1,5 @@
-@use 'sass:meta';
 @charset "utf-8";
-
+@use 'sass:meta';
 @import 'settings';
 @import '../node_modules/foundation-sites/scss/foundation';
 @import '../node_modules/motion-ui/motion-ui';
@@ -78,4 +77,16 @@ dfn.ladbp {
 
 legend.column-legend {
   @extend .column;
+}
+
+img.hdc-logo {
+  max-width: 200px;
+  height: auto;
+}
+
+label {
+  page-break-inside: avoid;
+  break-inside: avoid-page;
+  page-break-after: avoid;
+  break-after: avoid-page;
 }

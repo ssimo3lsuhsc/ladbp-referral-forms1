@@ -6616,18 +6616,27 @@ html.is-reveal-open body {
 dfn.ladbp {
   font-weight: bold;
   font-style: normal;
+}
+
+img.hdc-logo {
+  max-width: 200px;
+  height: auto;
+}
+
+label {
+  page-break-inside: avoid;
+  break-inside: avoid-page;
+  page-break-after: avoid;
+  break-after: avoid-page;
 }</style>
 </head>
 <body>
 <h1>Paquete de remisión al Proyecto para sordociegos de Luisiana</h1>
 <form>
-    <section>
+    <section id="introductory-letter">
         <h2>Carta de invitación al LADBP</h2>
         <p>Estimados padres/tutores:</p>
-        <p>Gracias por inscribir a su hijo en el <dfn class="ladbp">Proyecto para niños y adolescentes sordociegos de Luisiana.</dfn> Los estudiantes califican para su inclusión en el trabajo del <dfn class="ladbp">Proyecto</dfn> cuando presentan deficiencias auditivas y
-visuales concomitantes y permanentes que resultan en necesidades de comunicación, desarrollo y/o
-educación que no pueden ser acomodadas en programas de educación especial únicamente para niños con
-sordera o niños con ceguera.</p>
+        <p>Gracias por inscribir a su hijo en el <b class="ladbp">Proyecto para niños y adolescentes sordociegos de Luisiana.</b> Los estudiantes califican para su inclusión en el trabajo del <b class="ladbp">Proyecto</b> cuando presentan deficiencias auditivas y visuales concomitantes y permanentes que resultan en necesidades de comunicación, desarrollo y/o educación que no pueden ser acomodadas en programas de educación especial únicamente para niños con sordera o niños con ceguera.</p>
         <p>Se requiere verificación con respecto a la discapacidad auditiva y deficiencia visual de su hijo. Además, se
 requiere la verificación de la necesidad de servicios de educación especial de su hijo. Estas verificaciones se
 pueden realizar proporcionando al <dfn class="ladbp">Proyecto</dfn> copias de evaluaciones de audición, evaluaciones de la vista,
@@ -6648,7 +6657,7 @@ solicitud. La siguiente lista de verificación puede ayudarle a organizar la inf
         </p>
         <fieldset>
 
-            <div class="row column"><input name="checklist[]" id="checklist_ReferralApplication" type="checkbox"><label for="checklist_ReferralApplication">Formulario de solicitud de remisión del registro LADBP</label></div>
+            <div class="row column no-gaps"><input name="checklist[]" id="checklist_ReferralApplication" type="checkbox"><label for="checklist_ReferralApplication">Formulario de solicitud de remisión del registro LADBP</label></div>
             <div class="row column"><input name="checklist[]" id="checklist_ConsentForm" type="checkbox"><label for="checklist_ConsentForm">Formulario de consentimiento para inscribirse en el Proyecto LA Deafblind Project (Proyecto para
 Sordociegos de Luisiana)</label></div>
             <div class="row column"><input name="checklist[]" id="checklist_Notice" type="checkbox"><label for="checklist_Notice">Aviso de prácticas de privacidad con respecto a su información de salud protegida (HIPAA) (no es
@@ -6679,7 +6688,7 @@ necesario incluir texto en la solicitud final)</label></div>
     <div class="page-break"></div>
     <section>
         <div class="clearfix hdc-header">
-            <img class="float-left" src="images/HDC_logo.jpg" alt="LSUHSC Human Development Center: Building Capacity, Inspiring Change">
+            <img class="float-left hdc-logo" src="images/HDC_logo.jpg" alt="LSUHSC Human Development Center: Building Capacity, Inspiring Change">
             <address class="float-right text-right">
                 <dfn class="ladbp">Proyecto para niños y adolescentes sordociegos de Luisiana</dfn><br>
                 <span lang="en">
@@ -6852,7 +6861,7 @@ necesario incluir texto en la solicitud final)</label></div>
         <div class="page-break">
         </div>
         <article id="consent"><div class="clearfix hdc-header">
-            <img class="float-left" src="images/HDC_logo.jpg" alt="LSUHSC Human Development Center: Building Capacity, Inspiring Change">
+            <img class="float-left hdc-logo" src="images/HDC_logo.jpg" alt="LSUHSC Human Development Center: Building Capacity, Inspiring Change">
             <address class="float-right text-right">
                 <dfn class="ladbp">Proyecto para niños y adolescentes sordociegos de Luisiana</dfn><br>
                 <span lang="en">

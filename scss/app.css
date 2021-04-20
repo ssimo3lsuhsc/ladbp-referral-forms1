@@ -6615,4 +6615,20 @@ dfn.ladbp {
   font-style: normal;
 }
 
+img.hdc-logo {
+  max-width: 200px;
+  height: auto;
+}
+
+label {
+  page-break-inside: avoid;
+  break-inside: avoid-page;
+  page-break-after: avoid;
+  break-after: avoid-page;
+}
+
+#introductory-letter {
+  font-size: 11pt;
+}
+
 /*# sourceMappingURL=app.css.map */
