@@ -90,3 +90,38 @@ label {
   page-break-after: avoid;
   break-after: avoid-page;
 }
+
+.row {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+em > dfn {
+  font-style: normal;
+}
+
+output {
+  @extend [type=text];
+}
+
+.hdc-header {
+  margin-bottom: 1rem;
+}
+
+.lsu-logo-container {
+  @extend .clearfix;
+  @extend .hdc-header;
+}
+
+dl dd {
+  margin-bottom: 1rem;
+}
+
+#orwriteto {
+  margin-bottom: 0;
+}
+
+#privacy-address {
+  font-style: normal;
+  @extend p;
+}

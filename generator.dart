@@ -30,10 +30,11 @@ void main() {
   for (var language in ['en', 'es']) {
     var htmlDoc = parse(html);
     htmlDoc.documentElement.attributes["lang"] = language;
-    htmlDoc.head.querySelector("link[rel=stylesheet]").replaceWith(Element.html('<style type="text/css">' + sass.compile('scss/app.scss') + '</style>'));
     var attributeRemover = AttributeRemover(language);
     attributeRemover.visit(htmlDoc.body);
-    htmlDoc.querySelector('#consent').children.insert(0, htmlDoc.querySelector('.hdc-header').clone(true));
+    var hdcHeader = htmlDoc.querySelector('.hdc-header');
+    htmlDoc.querySelector('#application-form').children.insert(0, hdcHeader.clone(true));
+    htmlDoc.querySelector('#consent').children.insert(0, hdcHeader.clone(true));
     File('application_' + language + '.html').writeAsStringSync(htmlDoc.outerHtml);
   }
 
