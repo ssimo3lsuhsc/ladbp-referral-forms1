@@ -24,14 +24,14 @@
 <form>
     <section id="introductory-letter" class="row column">
         <p><em>Apunto sobre la selección de los nombres españoles: Las termas <dfn>Proyecto para niños y adolescentes sordociegos de Luisiana,</dfn> <dfn>Proyecto para sordociegos de Luisiana</dfn> y <dfn>LADBP</dfn> se refieren al proyecto que se llama internalmente <dfn>Louisiana DeafBlind Project for Children and Youth.</dfn></em></p>
-              <p>Estimados padres/tutores:</p>
+        <p>Estimados padres/tutores:</p>
         <p>Gracias por inscribir a su hijo en el <b class="ladbp">Proyecto para niños y adolescentes sordociegos de Luisiana.</b> Los estudiantes califican para su inclusión en el trabajo del <b class="ladbp">Proyecto</b> cuando presentan deficiencias auditivas y visuales concomitantes y permanentes que resultan en necesidades de comunicación, desarrollo y/o educación que no pueden ser acomodadas en programas de educación especial únicamente para niños con sordera o niños con ceguera.</p>
         <p>Se requiere verificación con respecto a la discapacidad auditiva y deficiencia visual de su hijo. Además, se requiere la verificación de la necesidad de servicios de educación especial de su hijo. Estas verificaciones se pueden realizar proporcionando al <dfn class="ladbp">Proyecto</dfn> copias de evaluaciones de audición, evaluaciones de la vista, evaluaciones educativas, Plan de educación individual (IEP) o Plan de servicio familiar individual (IFSP). Toda la información relativa a su hijo se mantiene confidencial.</p>
         <p>La información sobre la educación personal y atención médica está protegida por las leyes federales, incluida la 
             <dfn>Ley de derechos educativos y privacidad de la familia (FERPA)</dfn> y la 
             <dfn>Ley de privacidad y responsabilidad de los seguros de la salud (HIPAA).</dfn> Estas leyes garantizan que la información de educación y salud de su hijo se mantenga privada y requiere que le avisemos de nuestras obligaciones legales y prácticas en cuanto a la privacidad. En este paquete de información se incluye un 
             <dfn>Aviso de prácticas de privacidad en cuanto a la información de salud protegida</dfn> que detalla nuestras obligaciones bajo HIPAA. Favor de revisar este documento. Una vez revisado, complete el formulario 
-            <dfn>Reconocimiento de recibo de aviso de prácticas de privacidad</dfn> y devuélvalo al Proyecto para sordociegos de Luisiana junto con el resto de los materiales de la solicitud. <em>No es necesario incluir el Aviso en la solicitud final.</em> La siguiente lista de verificación puede ayudarle a organizar la información necesaria para su hijo.
+            <dfn>Reconocimiento de recibo de aviso de prácticas de privacidad</dfn> y devuélvalo al Proyecto para sordociegos de Luisiana junto con el resto de los materiales de la solicitud. <em class="font-bold">No es necesario incluir el Aviso en la solicitud final.</em> La siguiente lista de verificación puede ayudarle a organizar la información necesaria para su hijo.
 
         </p>
         <fieldset class="row column">
@@ -47,11 +47,11 @@
 
         </fieldset>
         <p>Gracias de nuevo por inscribir a su hijo en el <dfn class="ladbp">Proyecto para niños y adolescentes sordociegos de Luisiana.</dfn> Esperamos trabajar con su hijo y su familia.</p>
-        <p>Atentamente</p>
+        <p>Atentamente,</p>
         <p>&nbsp;</p>
-        <p>Michael C. Norman<br>Director, Proyecto para niños y adolescentes sordociegos de Luisiana
+        <p>Michael C. Norman<br>Director, Proyecto para niños y adolescentes sordociegos de Luisiana<br>
             <span lang="en">
-            <br><a href="https://www.hdc.lsuhsc.edu">Human Development Center</a>
+            <a href="https://www.hdc.lsuhsc.edu">Human Development Center</a>
                 <br>
                 <em>Louisiana's UCEDD</em>
                 <br>
@@ -137,24 +137,24 @@
                     <input id="zip" name="zip" pattern="[0-9]{5}(\-[0-9]{4})?" type="text">
                 </label>
             </div>
-            </div>
-            <div class="row">
-                <fieldset class="column small-6">
+        </div>
+        <div class="row">
+            <fieldset class="column small-6">
 
-                        <legend id="phone_legend">Teléfono (circule uno)</legend>
-                        <input type="radio" name="phone_type" value="Voice" id="phone_type_voice">
-                        <label for="phone_type_voice">Voz</label>
-                        <input type="radio" name="phone_type" value="TTY" id="phone_type_tty">
-                        <label for="phone_type_tty">TTY</label>
-                        <input type="radio" name="phone_type" value="VP" id="phone_type_vp">
-                        <label for="phone_type_vp">VP</label>
-                </fieldset>
-                <div class="column small-6">
-                    <label>Número de teléfono
-                        <input type="tel" name="phone" pattern="([2-9][0-9]{2}\-|\([2-9][0-9]{2}\) ?)[2-9][0-9]{2}\-[0-9]{4}" id="phone">
-                    </label>
-                </div>
+                <legend id="phone_legend">Teléfono (circule uno)</legend>
+                <input type="radio" name="phone_type" value="Voice" id="phone_type_voice">
+                <label for="phone_type_voice">Voz</label>
+                <input type="radio" name="phone_type" value="TTY" id="phone_type_tty">
+                <label for="phone_type_tty">TTY</label>
+                <input type="radio" name="phone_type" value="VP" id="phone_type_vp">
+                <label for="phone_type_vp">VP</label>
+            </fieldset>
+            <div class="column small-6">
+                <label>Número de teléfono
+                    <input type="tel" name="phone" pattern="([2-9][0-9]{2}\-|\([2-9][0-9]{2}\) ?)[2-9][0-9]{2}\-[0-9]{4}" id="phone">
+                </label>
             </div>
+        </div>
         <div class="row">
             <div class="column small-6">
                 <label>Fecha de nacimiento
@@ -269,7 +269,7 @@
             <div class="row">
                 <div class="column small-6">
                     <label for="consent-signature">Firma del padre/de la madre
-                        <output id="consent-signature"></output>
+                        <div class="signature-input" id="consent-signature"></div>
                     </label>
                 </div>
                 <div class="column small-6">
@@ -281,7 +281,7 @@
             <div class="row">
                 <div class="column small-6">
                     <label for="consent-other-signature">Otra firma autorizada
-                        <output id="consent-other-signature"></output>
+                        <div class="signature-input" id="consent-other-signature"></div>
                     </label>
                 </div>
                 <div class="column small-6">
@@ -409,9 +409,195 @@ Tenemos derecho a modificar en el futuro esta notificación y nuestras práctica
         New Orleans, LA 70112</span><br>O a: <a href="mailto:nocompliance@lsuhsc.edu">nocompliance@lsuhsc.edu</a></strong></address>
         <p>Esta notificación entra en vigencia el 
             <time datetime="2003-04-13">13/4/2003</time>
-            <br>Fecha de última modificación:
+            <br>Fecha de última modificación: 
             <time datetime="2020-02-26">26/02/2020</time>
         </p>
+
+    </section>
+    <div class="page-break"></div>
+    <section class="row column">
+        <h2>Anexo B <br>Reconocimiento de recibo del Aviso de prácticas de privacidad</h2>
+        <p>Yo ,
+            <label for="privacy-name">Nombre y apellidos del/de la paciente—en letra de imprenta
+                <input id="privacy-name" name="privacy-name" type="text">
+
+            </label>por la presente reconozco que he recibido una copia del Aviso de prácticas de privacidad de LSUHSC-NO en esta fecha.
+        </p>
+        <hr>
+        <h3>Documentación de esfuerzo de buena fe del proveedor de atención médica para obtener reconocimiento de recibo</h3>
+        <p>Si el Reconocimiento 
+            <strong>no se pudo obtenener</strong> antes de la fecha del primer servicio al paciente o, en una situación de emergencia, tan pronto como sea razonablemente posible después de que la emergencia se haya resuelto, describa a continuación los esfuerzos realizados para obtener el Reconocimiento por escrito y las razones por las que no se pudo obtener el Reconocimiento por escrito. Si el paciente se negó a proporcionar el Reconocimiento por escrito, indíquelo.
+        </p>
+        <div class="row column">
+            <label for="efforts">Esfuerzos para obtener un Reconocimiento por escrito:</label>
+            <textarea id="efforts"></textarea>
+        </div>
+        <div class="row column">
+            <label for="reasons">Razones por las que no se pudo obtener el Reconocimiento por escrito:</label>
+            <textarea id="reasons"></textarea>
+        </div>
+        <div class="row">
+            <div class="column small-6">
+                <label for="hcp_signature">Firma del proveedor de atención médica</label>
+                <div class="signature-input" id="hcp_signature"></div>
+            </div>
+            <div class="column small-6">
+                <label for="hcp_date">Fecha</label>
+                <input type="date" id="hcp_date" name="hcp_date">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column small-6">
+                <label for="hcp_name">Nombre en letra de imprenta del proveedor de atención médica</label>
+                <input type="text" id="hcp_name" name="hcp_name">
+            </div>
+        </div>
+
+    </section>
+    <div class="page-break"></div>
+    <section class="row column" id="phi_release"><div class="lsu-logo-container">
+            <img src="images/lsu_health_new_orleans-01.png" alt="LSU Health New Orleans">
+        </div>
+        <h2>Autorización para divulgación de información médica protegida</h2>
+        <small>Hacer dos copias. Entregar una al paciente. Conservar original en archivo de LSUHSC-NO.</small>
+        <div class="row">
+            <div class="column small-6">
+                <label for="release_patient_name">Nombre y apellidos del paciente</label>
+                <input id="release_patient_name" type="text" name="release_patient_name">
+            </div>
+            <div class="column small-6">
+                    <label for="release_birth_date">Fecha de nacimiento</label>
+                    <input id="release_birth_date" type="date" name="release_birth_date">
+            </div>
+        </div>
+        <div class="row column">
+            <label for="release_address">Domicilio</label>
+            <input id="release_address" type="text" name="release_address">
+        </div>
+        <div class="row">
+            <div class="column small-6">
+            <label for="release_city">Ciudad</label>
+            <input id="release_city" type="text" name="release_city">
+                </div>
+            <div class="column small-3">
+                <label for="release_state">Estado</label>
+                <input id="release_state" type="text" name="release_state" value="LA" maxlength="2" pattern="[A-Z]{2}">
+            </div>
+            <div class="column small-3">
+                <label for="release_zip">Código postal</label>
+                <input id="release_zip" type="text" name="release_zip" pattern="[0-9]{5}(\-[0-9]{4})?">
+            </div>
+        </div>
+        <h3>Poder para divulgar información médica protegida</h3>
+        <p>Mediante este documento autorizo a 
+            <label for="release_authorized_name" "="">Nombre y apellidos del indivual autorizado</label>
+            <input id="release_authorized_name" type="text"> a divulgar la información identificada en este formulario de autorización presente en los archivos médicos de 
+            <label for="release_patient_name1">Nombre y apellidos del paciente</label>
+            <input id="release_patient_name1" type="text" name="release_patient_name1"> a 
+            <label for="release_recipient_name">Nombre y apellidos del recipiente</label>
+            <input id="release_recipient_name" type="text">
+
+        </p>
+        <h4>Información que se divulgará</h4>
+        <div class="row">
+            <div class="column small-6">
+                <label for="release_from_date">Correspondiendo al período de atención médica desde (fecha)</label>
+                <input type="date" id="release_from_date" name="release_from_date">
+            </div>
+            <div class="column small-6">
+                <label for="release_to_date">Hasta (fecha)</label>
+                <input type="date" id="release_to_date" name="release_to_date">
+            </div>
+        </div>
+            <fieldset class="row column">
+                <legend>Marque los tipos de información que desee que se divulguen:</legend>
+                <div class="row">
+                    <div class="column small-6">
+                        <input type="checkbox" id="release_type_complete" name="release_type[]" value="complete">
+                        <label for="release_type_complete">Historia clínica completa</label><br>
+                        <input type="checkbox" id="release_type_history" name="release_type[]" value="history">
+                        <label for="release_type_history">Historial y examen físico</label><br>
+                        <input type="checkbox" id="release_type_results" name="release_type[]" value="results">
+                        <label for="release_type_results">Resultados de análisis</label><br>
+                        <input type="checkbox" id="release_type_photographs" name="release_type[]" value="photographs">
+                        <label for="release_type_photographs">Fotografías, videos</label><br>
+                        <input type="checkbox" id="release_type_codes" name="release_type[]" value="codes">
+                        <label for="release_type_codes">Códigos de diagnósticos y tratamientos</label><br>
+                        <input type="checkbox" id="release_type_consultations" name="release_type[]" value="consultations">
+                        <label for="release_type_consultations">Informes de consultas</label><br>
+                        <input type="checkbox" id="release_type_x-ray_reports" name="release_type[]" value="x-ray_reports">
+                        <label for="release_type_x-ray_reports">Informes de radiografías</label>
+
+                    </div>
+                    <div class="column small-6">
+                        <input type="checkbox" id="release_type_billing" name="release_type[]" value="billing">
+                        <label for="release_type_billing">Historial completo de facturación</label><br>
+                        <input type="checkbox" id="release_type_discharge" name="release_type[]" value="discharge">
+                        <label for="release_type_discharge">Informe de alta</label><br>
+                        <input type="checkbox" id="release_type_progress" name="release_type[]" value="progress">
+                        <label for="release_type_progress">Notas de progreso</label><br>
+                        <input type="checkbox" id="release_type_x-ray_films" name="release_type[]" value="x-ray_films">
+                        <label for="release_type_x-ray_films">Radiografías/Imágenes</label><br>
+                        <input type="checkbox" id="release_type_itemized" name="release_type[]" value="itemized">
+                        <label for="release_type_itemized">Factura desglosada</label><br>
+                        <input type="checkbox" id="release_type_psychotherapy" name="release_type[]" value="psychotherapy">
+                        <label for="release_type_psychotherapy">Notas de psicoterapia</label><br>
+                        <em>(Si se marca la opción de arriba, el resto de la IMP debe indicarse en otro formulario de autorización)</em>
+                    </div>
+                </div>
+            </fieldset>
+        <div class="row column">
+            <label for="release_other_type">Otro (especificar)</label>
+            <input type="text" id="release_other_type">
+        </div>
+        <h3>Finalidad de la divulgación solicitada de información médica protegida</h3>
+        <div class="row column">
+            <label for="release_purpose">Autorizo la divulgación de mi información médica protegida con los siguientes fines (por ejemplo, "cuando la solicite la persona"):</label>
+            <textarea id="release_purpose"></textarea>
+        </div>
+        <fieldset class="row column">
+            <legend>Si esta autorización es para marketing o para venta de IMP, ¿LSUHSC-NO recibirá dinero gracias a esta autorización? Marcar una opción:</legend>
+            <input type="radio" id="release_receive_payment_yes" name="release_receive_payment" value="Yes">
+            <label for="release_receive_payment_yes">Sí</label>
+            <input type="radio" id="release_receive_payment_no" name="release_receive_payment" value="No">
+            <label for="release_receive_payment_no">No</label>
+            <label for="release_payment_initials">Iniciales</label>
+            <input type="text" id="release_payment_initials">
+        </fieldset>
+        <div class="page-break"></div>
+        <h3 class="small-heading">Derecho a revocar la autorización</h3>
+        <p><strong>Si bien esto no afecta las acciones ya efectuadas a partir de este autorización, la autorización se puede revocar en todo momento mediante el envío de una notificación por escrito a</strong>
+        <label for="revocation_recipient_name">Nombre y apellidos del recipiente de la revocación</label>
+        <input id="revocation_recipient_name" type="text">
+        <strong>a</strong>
+        <label for="revocation_recipient_address">Información de contacto del recipiente del recipiente de la revocación</label>
+        <input id="revocation_recipient_address" type="text">
+        <strong>A menos que se revoque, esta autorización caducará en la siguiente fecha o tras el siguiente período o evento</strong>
+        <label for="expiration_criterion">Criterio de expiración</label>
+        <input type="text" id="expiration_criterion">
+        </p>
+
+        <h3 class="small-heading">Redivulgación</h3>
+        <p>Comprendo que la información divulgada a partir de esta autorización puede ser divulgada a su vez por el destinatario y ya no quedar protegida por la Ley de Responsabilidad y Portabilidad de Seguros de Salud de 1996.</p>
+        <div class="page-break"></div>
+        <h3 class="small-heading">Firma del paciente o del representante que podrá solicitar la divulgación</h3>
+        <p>Comprendo que no estoy obligado a firmar esta autorización y que no se me negará el tratamiento ni el pago de los servicios si no firmo este formulario. Sin embargo, si se me prestan servicios médicos a los fines de suministrar información a un tercero (por ejemplo, un análisis de capacidad laboral), comprendo que se pueden negar los servicios si no autorizo la divulgación de la información relativa a dichos servicios médicos al tercero. Tengo la posibilidad de revisar y copiar la información médica protegida que se vaya a utilizar o divulgar. Mediante el presente documento, libero y eximo de toda responsabilidad a LSUHSC-NO y sus directivos, directores, empleados y estudiantes, y el abajo firmante los liberará de toda responsabilidad por el cumplimiento de esta autorización.</p>
+        <div class="row">
+            <div class="column small-6">
+                <label for="release_signature">Firma</label>
+                <div class="signature-input" id="release_signature"></div>
+            </div>
+            <div class="column small-6">
+                <label for="release_date">Fecha</label>
+                <input type="date" id="release_date">
+            </div>
+        </div>
+        <div class="row column">
+            <label for="release_relation">Descripción de la relación si no es el paciente</label>
+            <input type="text" id="release_relation">
+        </div>
+
+
 
     </section>
 </form>

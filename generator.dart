@@ -35,6 +35,8 @@ void main() {
     var hdcHeader = htmlDoc.querySelector('.hdc-header');
     htmlDoc.querySelector('#application-form').children.insert(0, hdcHeader.clone(true));
     htmlDoc.querySelector('#consent').children.insert(0, hdcHeader.clone(true));
+    var lsuhscHeader = htmlDoc.querySelector('.lsu-logo-container');
+    htmlDoc.querySelector('#phi_release').children.insert(0, lsuhscHeader.clone(true));
     File('application_' + language + '.html').writeAsStringSync(htmlDoc.outerHtml);
   }
 

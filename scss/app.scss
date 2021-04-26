@@ -60,10 +60,13 @@
 @include foundation-flex-classes;
 @include foundation-visibility-classes;
 // @include foundation-prototype-classes;
+@include foundation-prototype-font-styling;
 
 // Motion UI
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+
 
 .page-break {
   break-after: page;
@@ -124,4 +127,21 @@ dl dd {
 #privacy-address {
   font-style: normal;
   @extend p;
+}
+
+textarea {
+  height: 4rem !important;
+}
+
+.signature-input {
+  @extend [type=text]
+}
+
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+  color: #999999
+}
+
+fieldset {
+  page-break-inside: avoid;
+  break-inside: avoid-page;
 }

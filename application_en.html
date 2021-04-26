@@ -24,14 +24,14 @@
 <form>
     <section id="introductory-letter" class="row column">
         <p><em><dfn></dfn><dfn></dfn><dfn></dfn><dfn></dfn></em></p>
-              <p>Dear Parents/Guardian:</p>
+        <p>Dear Parents/Guardian:</p>
         <p>Thank you for enrolling your child with the <b class="ladbp">Louisiana DeafBlind Project for Children and Youth.</b> Students qualify for inclusion in the <b class="ladbp">Project</b>'s work when they present with concomitant, permanent hearing and vision impairment resulting in communication, developmental and/or educational needs that cannot be accommodated in special education programs solely for children with deafness or children with blindness.</p>
         <p>Verification regarding your child’s hearing and vision impairment is required.  Also, verification of your child’s need for special education services is required.  These verifications can be accomplished by providing the <dfn class="ladbp">Project</dfn> copies of hearing evaluations, vision evaluations, educational evaluations, Individual Education Plan (IEP) or Individual Family Service Plan (IFSP).  All information regarding your child is held in confidence.</p>
         <p>Personal education and healthcare information is protected by Federal laws including the 
             <dfn>Family Educational Rights and Privacy Act (FERPA)</dfn> and the 
             <dfn>Health Information Privacy and Accountability Act (HIPAA).</dfn> These laws make sure your child’s educational &amp; health information is kept private and requires that we give you notice of our legal duties and privacy practices.  Included in this packet of information is a 
             <dfn>Notice of Privacy Practices Protected Health Information</dfn> which details our obligations under HIPAA. Please review this document.  Once reviewed, please complete the 
-            <dfn>Acknowledgment of Receipt of Notice of Privacy Practices</dfn> form and return it to the Louisiana DeafBlind Project along with the other application materials. <em>It is not necessary to include the Notice in the final application.</em> The following check-list may assist you in organizing the needed information for your child.
+            <dfn>Acknowledgment of Receipt of Notice of Privacy Practices</dfn> form and return it to the Louisiana DeafBlind Project along with the other application materials. <em class="font-bold">It is not necessary to include the Notice in the final application.</em> The following check-list may assist you in organizing the needed information for your child.
 
         </p>
         <fieldset class="row column">
@@ -49,9 +49,9 @@
         <p>Thank you again for enrolling your child with the <dfn class="ladbp">Louisiana DeafBlind Project for Children and Youth.</dfn> We look forward to working with your child and your family.</p>
         <p>Sincerely,</p>
         <p>&nbsp;</p>
-        <p>Michael C. Norman<br>Director, Louisiana DeafBlind Project for Children and Youth
+        <p>Michael C. Norman<br>Director, Louisiana DeafBlind Project for Children and Youth<br>
             <span lang="en">
-            <br><a href="https://www.hdc.lsuhsc.edu">Human Development Center</a>
+            <a href="https://www.hdc.lsuhsc.edu">Human Development Center</a>
                 <br>
                 <em>Louisiana's UCEDD</em>
                 <br>
@@ -137,24 +137,24 @@
                     <input id="zip" name="zip" pattern="[0-9]{5}(\-[0-9]{4})?" type="text">
                 </label>
             </div>
-            </div>
-            <div class="row">
-                <fieldset class="column small-6">
+        </div>
+        <div class="row">
+            <fieldset class="column small-6">
 
-                        <legend id="phone_legend">Phone (circle one)</legend>
-                        <input type="radio" name="phone_type" value="Voice" id="phone_type_voice">
-                        <label for="phone_type_voice">Voice</label>
-                        <input type="radio" name="phone_type" value="TTY" id="phone_type_tty">
-                        <label for="phone_type_tty">TTY</label>
-                        <input type="radio" name="phone_type" value="VP" id="phone_type_vp">
-                        <label for="phone_type_vp">VP</label>
-                </fieldset>
-                <div class="column small-6">
-                    <label>Phone Number
-                        <input type="tel" name="phone" pattern="([2-9][0-9]{2}\-|\([2-9][0-9]{2}\) ?)[2-9][0-9]{2}\-[0-9]{4}" id="phone">
-                    </label>
-                </div>
+                <legend id="phone_legend">Phone (circle one)</legend>
+                <input type="radio" name="phone_type" value="Voice" id="phone_type_voice">
+                <label for="phone_type_voice">Voice</label>
+                <input type="radio" name="phone_type" value="TTY" id="phone_type_tty">
+                <label for="phone_type_tty">TTY</label>
+                <input type="radio" name="phone_type" value="VP" id="phone_type_vp">
+                <label for="phone_type_vp">VP</label>
+            </fieldset>
+            <div class="column small-6">
+                <label>Phone Number
+                    <input type="tel" name="phone" pattern="([2-9][0-9]{2}\-|\([2-9][0-9]{2}\) ?)[2-9][0-9]{2}\-[0-9]{4}" id="phone">
+                </label>
             </div>
+        </div>
         <div class="row">
             <div class="column small-6">
                 <label>Birth Date
@@ -269,7 +269,7 @@
             <div class="row">
                 <div class="column small-6">
                     <label for="consent-signature">Parent's Signature
-                        <output id="consent-signature"></output>
+                        <div class="signature-input" id="consent-signature"></div>
                     </label>
                 </div>
                 <div class="column small-6">
@@ -281,7 +281,7 @@
             <div class="row">
                 <div class="column small-6">
                     <label for="consent-other-signature">Other Authorized Signature
-                        <output id="consent-other-signature"></output>
+                        <div class="signature-input" id="consent-other-signature"></div>
                     </label>
                 </div>
                 <div class="column small-6">
@@ -390,18 +390,15 @@
             <p>You may also have the following rights regarding your medical information:</p>
             <p><strong>You have the right</strong> to ask us to treat your medical information in a special way, different from what we normally do. Unless you have the right to object to the use of the information, we do not have to agree with you. If we do agree to your wishes, we have to follow your wishes until we tell you that we will no longer do so.</p>
             <p><strong>You have the right</strong> to tell us how you would like us to send your information to you. For example, you might want us to call you only at work or only at home. Or you may not want us to call you at all. If your request is reasonable, we must follow your request.</p>
-            <p><strong>You have the right</strong> to look at your medical information and, if you want, to get a copy of it. We can charge you for a copy, but only a reasonable amount. Your right to look at and copy your medical records is based upon certain rules.
-For example, we can ask you to make your request in writing, or, if you come in person, that you do so at certain times of the day.</p>
+            <p><strong>You have the right</strong> to look at your medical information and, if you want, to get a copy of it. We can charge you for a copy, but only a reasonable amount. Your right to look at and copy your medical records is based upon certain rules. For example, we can ask you to make your request in writing, or, if you come in person, that you do so at certain times of the day.</p>
             <p><strong>You have the right</strong> to ask us to change your medical information. For example, if you think we made a mistake in writing down what you said about when you began to feel bad, you can tell us. If we do not agree to change your record, we will tell you why, in writing, and give you information about your rights.</p>
             <p><strong>You have the right</strong> to be told to whom we have given your medical information in the six years before you ask. This does not apply to all disclosures. For example, if we gave someone your medical information so that they could treat you or pay for your care, we do not have to keep a record of that.</p>
             <p><strong>You have the right</strong> to get a copy of this notice at no charge.</p>
             <p><strong>You have the right</strong> to complain to us or to the United States Department of Health and Human Services if you believe that we have violated your privacy rights.</p>
         </article>
-        <p><strong>If you have a complaint or concern, please call our 24-hour Hotline: <a href="tel:+18555614099">(855) 561-4099</a>. Your call will be handled
-by our Privacy Officer. You may remain anonymous and all calls are kept confidential.
+        <p><strong>If you have a complaint or concern, please call our 24-hour Hotline: <a href="tel:+18555614099">(855) 561-4099</a>. Your call will be handled by our Privacy Officer. You may remain anonymous and all calls are kept confidential.
         </strong></p>
-        <p><strong>For additional information about your rights or about the uses and disclosures of your medical information,
-please call the Office of Compliance Programs at: 
+        <p><strong>For additional information about your rights or about the uses and disclosures of your medical information, please call the Office of Compliance Programs at: 
             <a href="tel:+15045688448">(504) 568-8448</a> to speak with either our Compliance or
 Privacy Officer or OCP team member.
         </strong></p>
@@ -412,9 +409,195 @@ Privacy Officer or OCP team member.
         New Orleans, LA 70112</span><br>Or email: <a href="mailto:nocompliance@lsuhsc.edu">nocompliance@lsuhsc.edu</a></strong></address>
         <p>This notice is effective as of 
             <time datetime="2003-04-13">4/13/2003</time>
-            <br>Date Last Revised
+            <br>Date Last Revised: 
             <time datetime="2020-02-26">02/26/2020</time>
         </p>
+
+    </section>
+    <div class="page-break"></div>
+    <section class="row column">
+        <h2>Attachment B <br>Acknowledgement of Receipt of Notice of Privacy Practices</h2>
+        <p>I, 
+            <label for="privacy-name">Patient's Name—Please Print
+                <input id="privacy-name" name="privacy-name" type="text">
+
+            </label>, acknowledge that I have received a copy of the Notice of Privacy Practices of LSUHSC-NO on this date.
+        </p>
+        <hr>
+        <h3>Health Care Provider’s Documentation of Good Faith Effort to Obtain Acknowledgement of Receipt</h3>
+        <p>If the Acknowledgement 
+            <strong>could not be received</strong> prior to the date of first service to the patient, or, in an emergency situation, as soon as reasonably practicable after the emergency has resolved, describe below the efforts made to obtain the written Acknowledgement and the reasons why the written Acknowledgement could not be obtained. If the patient refused to provide the written Acknowledgement, please so state.
+        </p>
+        <div class="row column">
+            <label for="efforts">Efforts to obtain written Acknowledgement:</label>
+            <textarea id="efforts"></textarea>
+        </div>
+        <div class="row column">
+            <label for="reasons">Reasons written Acknowledgement could not be obtained:</label>
+            <textarea id="reasons"></textarea>
+        </div>
+        <div class="row">
+            <div class="column small-6">
+                <label for="hcp_signature">Signature of health care provider</label>
+                <div class="signature-input" id="hcp_signature"></div>
+            </div>
+            <div class="column small-6">
+                <label for="hcp_date">Date</label>
+                <input type="date" id="hcp_date" name="hcp_date">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column small-6">
+                <label for="hcp_name">Printed name of health care provider</label>
+                <input type="text" id="hcp_name" name="hcp_name">
+            </div>
+        </div>
+
+    </section>
+    <div class="page-break"></div>
+    <section class="row column" id="phi_release"><div class="lsu-logo-container">
+            <img src="images/lsu_health_new_orleans-01.png" alt="LSU Health New Orleans">
+        </div>
+        <h2>Authorization for Release of Protected Health Information</h2>
+        <small>Make two copies. Provide one to patient. Maintain original in LSUHSC-NO Files.</small>
+        <div class="row">
+            <div class="column small-6">
+                <label for="release_patient_name">Patient's Name</label>
+                <input id="release_patient_name" type="text" name="release_patient_name">
+            </div>
+            <div class="column small-6">
+                    <label for="release_birth_date">Birth Date</label>
+                    <input id="release_birth_date" type="date" name="release_birth_date">
+            </div>
+        </div>
+        <div class="row column">
+            <label for="release_address">Address</label>
+            <input id="release_address" type="text" name="release_address">
+        </div>
+        <div class="row">
+            <div class="column small-6">
+            <label for="release_city">City</label>
+            <input id="release_city" type="text" name="release_city">
+                </div>
+            <div class="column small-3">
+                <label for="release_state">State</label>
+                <input id="release_state" type="text" name="release_state" value="LA" maxlength="2" pattern="[A-Z]{2}">
+            </div>
+            <div class="column small-3">
+                <label for="release_zip">Zip</label>
+                <input id="release_zip" type="text" name="release_zip" pattern="[0-9]{5}(\-[0-9]{4})?">
+            </div>
+        </div>
+        <h3>Authority to Release Protected Health Information</h3>
+        <p>I hereby authorize 
+            <label for="release_authorized_name" "="">Name of Authorized Individual</label>
+            <input id="release_authorized_name" type="text">  to release the information identified in this authorization form from the medical records of 
+            <label for="release_patient_name1">Patient Name</label>
+            <input id="release_patient_name1" type="text" name="release_patient_name1"> and provide such information to 
+            <label for="release_recipient_name">Recipient Name</label>
+            <input id="release_recipient_name" type="text">
+
+        </p>
+        <h4>Information to Be Released</h4>
+        <div class="row">
+            <div class="column small-6">
+                <label for="release_from_date">Covering the Periods of Health Care From (Date)</label>
+                <input type="date" id="release_from_date" name="release_from_date">
+            </div>
+            <div class="column small-6">
+                <label for="release_to_date">To (Date)</label>
+                <input type="date" id="release_to_date" name="release_to_date">
+            </div>
+        </div>
+            <fieldset class="row column">
+                <legend>Please check type of information to be released:</legend>
+                <div class="row">
+                    <div class="column small-6">
+                        <input type="checkbox" id="release_type_complete" name="release_type[]" value="complete">
+                        <label for="release_type_complete">Complete health record</label><br>
+                        <input type="checkbox" id="release_type_history" name="release_type[]" value="history">
+                        <label for="release_type_history">History and physical exam</label><br>
+                        <input type="checkbox" id="release_type_results" name="release_type[]" value="results">
+                        <label for="release_type_results">Laboratory test results</label><br>
+                        <input type="checkbox" id="release_type_photographs" name="release_type[]" value="photographs">
+                        <label for="release_type_photographs">Photographs, videotapes</label><br>
+                        <input type="checkbox" id="release_type_codes" name="release_type[]" value="codes">
+                        <label for="release_type_codes">Diagnosis &amp; treatment codes</label><br>
+                        <input type="checkbox" id="release_type_consultations" name="release_type[]" value="consultations">
+                        <label for="release_type_consultations">Consultation reports</label><br>
+                        <input type="checkbox" id="release_type_x-ray_reports" name="release_type[]" value="x-ray_reports">
+                        <label for="release_type_x-ray_reports">X-ray reports</label>
+
+                    </div>
+                    <div class="column small-6">
+                        <input type="checkbox" id="release_type_billing" name="release_type[]" value="billing">
+                        <label for="release_type_billing">Complete billing record</label><br>
+                        <input type="checkbox" id="release_type_discharge" name="release_type[]" value="discharge">
+                        <label for="release_type_discharge">Discharge summary</label><br>
+                        <input type="checkbox" id="release_type_progress" name="release_type[]" value="progress">
+                        <label for="release_type_progress">Progress notes</label><br>
+                        <input type="checkbox" id="release_type_x-ray_films" name="release_type[]" value="x-ray_films">
+                        <label for="release_type_x-ray_films">X-ray films/images</label><br>
+                        <input type="checkbox" id="release_type_itemized" name="release_type[]" value="itemized">
+                        <label for="release_type_itemized">Itemized bill</label><br>
+                        <input type="checkbox" id="release_type_psychotherapy" name="release_type[]" value="psychotherapy">
+                        <label for="release_type_psychotherapy">Psychotherapy Notes</label><br>
+                        <em>(If above is checked, any other PHI must be listed on a separate authorization form)</em>
+                    </div>
+                </div>
+            </fieldset>
+        <div class="row column">
+            <label for="release_other_type">Other (specify)</label>
+            <input type="text" id="release_other_type">
+        </div>
+        <h3>Purpose of the Requested Disclosure of Protected Health Information</h3>
+        <div class="row column">
+            <label for="release_purpose">I am authorizing the release of my Protected Health Information for the following purposes (e.g. a purpose may be “at the request of the individual”):</label>
+            <textarea id="release_purpose"></textarea>
+        </div>
+        <fieldset class="row column">
+            <legend>If this authorization is for the purposes of marketing or the sale of PHI, will LSUHSC-NO receive any payment as a result of this authorization? Check One:</legend>
+            <input type="radio" id="release_receive_payment_yes" name="release_receive_payment" value="Yes">
+            <label for="release_receive_payment_yes">Yes</label>
+            <input type="radio" id="release_receive_payment_no" name="release_receive_payment" value="No">
+            <label for="release_receive_payment_no">No</label>
+            <label for="release_payment_initials">Initials</label>
+            <input type="text" id="release_payment_initials">
+        </fieldset>
+        <div class="page-break"></div>
+        <h3 class="small-heading">Right to Revoke Authorization</h3>
+        <p><strong>Except to the extent that action has already been taken in reliance on this authorization, the authorization may be revoked at any time by submitting a written notice to</strong>
+        <label for="revocation_recipient_name">Revocation Recipient Name</label>
+        <input id="revocation_recipient_name" type="text">
+        <strong>at</strong>
+        <label for="revocation_recipient_address">Revocation Recipient Contact Information</label>
+        <input id="revocation_recipient_address" type="text">
+        <strong>Unless revoked, this authorization will expire on the following date, or after the following time period or event:</strong>
+        <label for="expiration_criterion">Criterion of Expiration</label>
+        <input type="text" id="expiration_criterion">
+        </p>
+
+        <h3 class="small-heading">Re-disclosure</h3>
+        <p>I understand the information disclosed by this authorization may be subject to re-disclosure by the recipient and no longer be protected by the Health Insurance Portability and Accountability Act of 1996.</p>
+        <div class="page-break"></div>
+        <h3 class="small-heading">Signature of Patient or Personal Representative Who May Request Disclosure</h3>
+        <p>I understand that I do not have to sign this authorization, and my treatment or payment for services will not be denied if I do not sign this form. However, if health care services are being provided to me for the purpose of providing information to a third-party (e.g. fitness-for-work test), I understand that services may be denied if I do not authorize the release of information related to such health care services to the third-party. I can inspect or copy the protected health information to be used or disclosed. I hereby release and discharge LSUHSC-NO and its officers, directors, employees and students of any liability and the undersigned will hold them harmless for complying with this Authorization.</p>
+        <div class="row">
+            <div class="column small-6">
+                <label for="release_signature">Signature</label>
+                <div class="signature-input" id="release_signature"></div>
+            </div>
+            <div class="column small-6">
+                <label for="release_date">Date</label>
+                <input type="date" id="release_date">
+            </div>
+        </div>
+        <div class="row column">
+            <label for="release_relation">Description of relationship if not patient</label>
+            <input type="text" id="release_relation">
+        </div>
+
+
 
     </section>
 </form>
